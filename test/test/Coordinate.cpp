@@ -3,13 +3,15 @@
 using namespace std;
 
 
-Coordinate::Coordinate()
+Coordinate::Coordinate(int x,int y)
 {
-	cout << "Coordinate()" << endl;
+	m_iX = x;
+	m_iY = y;
+	cout << "Coordinate()"<<m_iX<<m_iY << endl;
 }
 
 
 Coordinate::~Coordinate()
 {
-	cout << "~Coordinate()" << endl;
+	cout << "~Coordinate()" << m_iX << m_iY << endl;
 }
